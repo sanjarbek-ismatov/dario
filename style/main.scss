@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+$blue: #007bff;
+$white: #fff;
+$grey: #959eaf;
+$greypro: #646f79;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.button-white,
+.button-dark {
+  font-size: 15px;
+  border: none;
+  padding: 15px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.button-white {
+  color: $blue;
+  &:hover {
+    transform: translateY(-2px);
+    background-color: $blue;
+    color: $white;
+  }
+}
+.button-dark {
+  color: $white;
+  background-color: $blue;
+  &:hover {
+    transform: translateY(-2px);
+    opacity: 0.8;
+  }
+}
+
+header {
+  font-family: "Roboto", sans-serif;
+  background-image: url("/images/bg-img-1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px 140px;
+  margin: 0px 60px;
+  font-size: 18px;
+  nav {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .menu-bar {
+      display: inherit;
+      .menu-icon {
+        display: none;
+        width: 25px;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        li {
+          padding: 20px;
+          a {
+            transition: 0.3s ease;
+            text-decoration: none;
+            color: $grey;
+            &:hover {
+              color: $blue;
+            }
+          }
+        }
+        li:nth-child(1) {
+          font-weight: bold;
+          a {
+            color: $blue;
+          }
+        }
+      }
+      .buttons {
+        margin-top: 5px;
+      }
+    }
+  }
+  section {
+    display: flex;
+    align-items: flex-start;
+    padding: 100px;
+    font-size: 20px;
+    color: $greypro;
+    font-family: "Poppins", sans-serif;
+    justify-content: space-between;
+
+    .left {
+      padding: 25px 0;
+      line-height: 35px;
+      .buttons {
+        font-size: 18px;
+        padding: 30px 0;
+        line-height: 40px;
+      }
+    }
+  }
+}
