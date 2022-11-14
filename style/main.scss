@@ -119,7 +119,7 @@ main {
 
   text-align: center;
   font-family: "Roboto-Light", sans-serif;
-  .section {
+  section {
     p {
       color: $greypro;
       padding: 20px 0;
@@ -157,6 +157,15 @@ main {
         text-align: left;
         width: 350px;
       }
+    }
+  }
+  .main-section {
+    display: flex;
+    justify-content: center;
+    .container {
+      display: flex;
+      max-width: 610px;
+      flex-wrap: wrap;
     }
   }
 }
