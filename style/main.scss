@@ -1,9 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("/fonts/Roboto/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Think";
+  src: url("/fonts/Roboto/Roboto-Thin.ttf");
+}
 $blue: #007bff;
 $white: #fff;
 $grey: #959eaf;
 $greypro: #646f79;
+$black: #222222;
 * {
   padding: 0;
   margin: 0;
@@ -85,7 +97,7 @@ header {
   section {
     display: flex;
     align-items: flex-start;
-    padding: 100px;
+    padding: 100px 50px;
     font-size: 20px;
     color: $greypro;
     font-family: "Poppins", sans-serif;
@@ -98,6 +110,52 @@ header {
         font-size: 18px;
         padding: 30px 0;
         line-height: 40px;
+      }
+    }
+  }
+}
+main {
+  width: 100%;
+
+  text-align: center;
+  font-family: "Roboto-Light", sans-serif;
+  .section {
+    p {
+      color: $greypro;
+      padding: 20px 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .head {
+      font-size: 40px;
+      color: $black;
+      font-weight: 100;
+    }
+    .partner-images {
+      display: flex;
+      width: 800px;
+      margin: 20px auto;
+
+      height: 25px;
+      justify-content: space-between;
+    }
+    .features {
+      margin: 35px 0;
+      font-family: "Roboto-Think", sans-serif;
+      display: flex;
+      justify-content: center;
+      div {
+        p {
+          line-height: 30px;
+          font-size: 17px;
+        }
+        .h {
+          color: $black;
+          font-size: 25px;
+        }
+
+        text-align: left;
+        width: 350px;
       }
     }
   }

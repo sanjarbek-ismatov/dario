@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/style/main.css" rel="stylesheet" />
+    <link href="/lib/aos/aos.css" rel="stylesheet" />
+
     <title>Dario</title>
   </head>
   <body>
@@ -31,20 +33,99 @@
       </nav>
       <section>
         <div class="left">
-          <p>
+          <p data-aos="fade-up" data-aos-duration="1000">
             Dario mijozlarga noyob va moslashtirilgan ochilish sahifalarini
             ishlab chiqishda yordam beradigan yaxshi elementlar va vositalar
             to'plami bilan birga keladi.
           </p>
-          <div class="buttons">
+          <div
+            class="buttons"
+            data-aos-delay="500"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <a class="button-white">Boshlash</a>
             <a class="button-dark">Demoni ko'rish</a>
           </div>
         </div>
         <div class="right">
-          <img src="/images/banner1.png" />
+          <img
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            src="/images/banner1.png"
+          />
         </div>
       </section>
     </header>
+    <main>
+      <div class="section">
+        <p class="head">Bizning homiylarimiz</p>
+        <p>
+          Mavzumizdan foydalanib, qisqa vaqt ichida tez, chiroyli va zamonaviy
+          ko'rinishdagi veb-saytlar yaratishni boshlang
+        </p>
+        <div class="partner-images">
+          <img data-aos="fade-up" src="/images/partner1.png" alt="partner" />
+          <img
+            data-aos="fade-up"
+            data-aos-delay="100"
+            src="/images/partner2.png"
+            alt="partner"
+          />
+          <img
+            data-aos="fade-up"
+            data-aos-delay="200"
+            src="/images/partner3.png"
+            alt="partner"
+          />
+          <img
+            data-aos="fade-up"
+            data-aos-delay="300"
+            src="/images/partner4.png"
+            alt="partner"
+          />
+          <img
+            data-aos="fade-up"
+            data-aos-delay="400"
+            src="/images/partner5.png"
+            alt="partner"
+          />
+        </div>
+      </div>
+      <div class="section">
+        <p class="head">Asosiy xususiyatlar</p>
+        <p>Nima uchun Dario ochilish sahifasi shablonini tanlashingiz kerak</p>
+        <div class="features">
+          <div>
+            <img src="/images/feature1.svg" />
+            <p class="h">To'liq moslashtirilgan</p>
+            <p>
+              Dario-dan foydalanib, ochilish sahifangizga shaxsiy teginish
+              qo'shing.
+            </p>
+          </div>
+          <div>
+            <img src="/images/feature2.svg" />
+            <p class="h">To'liq moslashtirilgan</p>
+            <p>
+              Dario-dan foydalanib, ochilish sahifangizga shaxsiy teginish
+              qo'shing.
+            </p>
+          </div>
+          <div>
+            <img src="/images/feature3.svg" />
+            <p class="h">To'liq moslashtirilgan</p>
+            <p>
+              Dario-dan foydalanib, ochilish sahifangizga shaxsiy teginish
+              qo'shing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
+  <script src="/lib/aos/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
