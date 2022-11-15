@@ -130,7 +130,7 @@ main section .head {
 main section .partner-images {
   display: flex;
   width: 800px;
-  margin: 20px auto;
+  margin: 20px auto 100px;
   height: 25px;
   justify-content: space-between;
 }
@@ -154,10 +154,45 @@ main section .features div .h {
 }
 main .main-section {
   display: flex;
+  align-items: center;
+  max-width: 1050px;
+  text-align: left;
+  line-height: 30px;
+  width: 100%;
+  margin: auto;
   justify-content: center;
+}
+main .main-section p {
+  color: #646f79;
+}
+main .main-section h1 {
+  padding: 30px 0;
+  line-height: 40px;
 }
 main .main-section .container {
   display: flex;
-  max-width: 610px;
+  justify-content: flex-start;
+  margin: 20px 0;
   flex-wrap: wrap;
+}
+main .main-section .container div {
+  text-align: left;
+  width: 260px;
+  height: 160px;
+}
+main .main-section .container div .h {
+  font-weight: bold;
+  color: #222222;
+  font-size: 20px;
+}
+main .main-section .right {
+  width: 700px;
+}
+main .main-section .right img {
+  width: 100%;
+}
+main .main-section .left {
+  width: 100%;
+  line-height: 35px;
+  margin: 0 30px 0 0;
 }/*# sourceMappingURL=main.css.map */
