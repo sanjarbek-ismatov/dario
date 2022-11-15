@@ -152,6 +152,21 @@ main section .features div .h {
   color: #222222;
   font-size: 25px;
 }
+main .great {
+  font-family: "Roboto-Think", sans-serif;
+  text-align: left;
+  margin: 40px auto;
+  max-width: 1200px;
+  width: 100%;
+}
+main .great h1 {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+}
+main .great p {
+  color: #646f79;
+}
 main .main-section {
   display: flex;
   align-items: center;
