@@ -13,3 +13,12 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+const nav = document.getElementById('nav')
+window.onscroll = () => {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+    nav.classList.add('scroll-nav')
+  }
+  else{
+    nav.classList.remove('scroll-nav')
+  }
+}

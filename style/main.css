@@ -59,6 +59,7 @@ header nav {
   align-items: center;
   display: flex;
   width: 100%;
+  transition: 0.5s ease;
   justify-content: space-between;
 }
 header nav .menu-bar {
@@ -91,6 +92,15 @@ header nav .menu-bar ul li:nth-child(1) a {
 }
 header nav .menu-bar .buttons {
   margin-top: 5px;
+}
+header .scroll-nav {
+  width: 1160px;
+  padding: 0 30px;
+  position: fixed;
+  top: 10px;
+  border-radius: 30px;
+  z-index: 2;
+  background-color: #fff;
 }
 header section {
   display: flex;
