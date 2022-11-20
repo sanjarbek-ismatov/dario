@@ -21,7 +21,7 @@
 .button-dark {
   font-size: 15px;
   border: none;
-  padding: 15px 20px;
+  padding: 7px 20px;
   margin: 0 5px;
   border-radius: 5px;
   cursor: pointer;
@@ -62,6 +62,14 @@ header nav {
   transition: 0.5s ease;
   justify-content: space-between;
 }
+header nav .buttons {
+  display: flex;
+  align-items: center;
+}
+header nav .buttons .button-white,
+header nav .buttons .button-dark {
+  padding: 15px 20px;
+}
 header nav .menu-bar {
   display: inherit;
 }
@@ -90,9 +98,6 @@ header nav .menu-bar ul li:nth-child(1) {
 header nav .menu-bar ul li:nth-child(1) a {
   color: #007bff;
 }
-header nav .menu-bar .buttons {
-  margin-top: 5px;
-}
 header .scroll-nav {
   width: 1160px;
   padding: 0 30px;
@@ -107,21 +112,30 @@ header .scroll-nav {
 }
 header section {
   display: flex;
-  align-items: flex-start;
+  flex-wrap: wrap-reverse;
   padding: 100px 50px;
-  font-size: 20px;
+  font-size: 18px;
   color: #646f79;
   font-family: "Poppins", sans-serif;
   justify-content: space-between;
 }
 header section .left {
   padding: 25px 0;
+  width: 350px;
   line-height: 35px;
 }
 header section .left .buttons {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 18px;
   padding: 30px 0;
   line-height: 40px;
+}
+header section .right {
+  max-width: 550px;
+}
+header section .right img {
+  width: 100%;
 }
 
 main {
