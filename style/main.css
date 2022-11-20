@@ -70,12 +70,12 @@ header nav .buttons .button-white,
 header nav .buttons .button-dark {
   padding: 15px 20px;
 }
-header nav .menu-bar {
-  display: inherit;
-}
-header nav .menu-bar .menu-icon {
+header nav .menu-icon {
   display: none;
   width: 25px;
+}
+header nav .menu-bar {
+  display: inherit;
 }
 header nav .menu-bar ul {
   list-style: none;
@@ -132,10 +132,11 @@ header section .left .buttons {
   line-height: 40px;
 }
 header section .right {
-  max-width: 550px;
+  width: 550px;
 }
 header section .right img {
   width: 100%;
+  height: auto;
 }
 
 main {
@@ -269,4 +270,38 @@ main .main-section .left {
 }
 .swiper .swiper-wrapper .swiper-slide:hover p {
   color: #fff !important;
+}
+
+@media only screen and (max-width: 1400px) {
+  header {
+    padding: 40px;
+  }
+  header section {
+    padding: 100px 0;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  header section {
+    justify-content: center;
+  }
+  header section .left,
+header section .right {
+    width: 100%;
+  }
+  header nav .menu-bar {
+    background-color: #fff;
+    z-index: 99;
+    display: block;
+    position: fixed;
+    right: 10px;
+    top: 100px;
+    padding: 30px;
+  }
+  header nav .menu-bar ul,
+header nav .menu-bar .buttons {
+    display: block;
+  }
+  header nav .menu-icon {
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */
